@@ -20,7 +20,7 @@ limitations under the License.
 
 // MODIFY THIS
 // We need to find our include files so set this properly
-define("BASEPATH", "../public/");
+define("BASEPATH", dirname(__FILE__) . "/../");
 
 /*****************************************************
  * No need to change beyond this point               *

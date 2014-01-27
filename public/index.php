@@ -23,7 +23,7 @@ $dStartTime = microtime(true);
 
 // This should be okay
 // No but Its now, - Aim
-define("BASEPATH", dirname(__FILE__) . "/");
+define("BASEPATH", dirname(__FILE__) . "/../");
 
 // Our security check
 define("SECURITY", 1);
