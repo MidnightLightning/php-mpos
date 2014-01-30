@@ -10,4 +10,14 @@ class baseconfig {
   host { 'hostmachine':
     ip => '192.168.0.1';
   }
+  
+  file { '/usr/local/bin/litecoind':
+    ensure => link,
+    target => "/vagrant/litecoind";
+  }
+  
+  file { '/home/vagrant/litecoin':
+    recurse => "true",
+    source => "puppet:///modules/baseconfig/litecoin-testnet-box";
+  }
 }
